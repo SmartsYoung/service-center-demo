@@ -1,0 +1,54 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {
+            "name": ""
+        },
+        "version": "",
+        "title": ""
+    },
+    "paths": {
+        "/hello": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "hello info",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/app.Response"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "app.Response": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "object"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

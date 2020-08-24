@@ -1,0 +1,13 @@
+service: # 微服务配置
+  appId: eureka
+  name: account-server
+  version: 0.0.1
+  contacts:  appResponse,appRequest
+  schema:
+    schemas: hello
+    summary: hello info
+  instance: # 实例信息
+    protocol: rest
+    listenAddress: 127.0.0.1:8095 #实例监听地址
+registry:
+  address: http://127.0.0.1:30100 # service-center 地址

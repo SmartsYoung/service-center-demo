@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/apache/servicecomb-service-center/scub/web/websocket/impl"
+	"github.com/SmartsYoung/service-center-demo/scub/web/websocket/impl"
 	"github.com/gorilla/websocket"
 	"net/http"
 
